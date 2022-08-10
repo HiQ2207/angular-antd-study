@@ -1,0 +1,18 @@
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-base-page',
+  templateUrl: './base-page.component.html',
+  styleUrls: ['./base-page.component.css']
+})
+export class BasePageComponent implements OnInit {
+  public title: any = 'AnguarDemoAntd';
+  public isCollapsed: any = 'false';
+
+  constructor() { }
+
+  ngOnInit() {
+  }
+
+
+}

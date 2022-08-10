@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'AnguarDemoAntd';
+
+  public isCollapsed: boolean = false;
+
+  constructor() {}
+
+  ngOnInit() {
+  }
 }

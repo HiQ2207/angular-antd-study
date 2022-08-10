@@ -1,0 +1,35 @@
+<nz-layout>
+  <nz-header class="header">
+    <img src="../assets/logo.png" alt="">
+    <p>angualrDemo</p>
+  </nz-header>
+  <nz-layout>
+    <!-- 左侧菜单 -->
+    <nz-sider
+      nzCollapsible
+      [(nzCollapsed)]="isCollapsed"
+      [nzBreakpoint]="'lg'"
+      [nzCollapsedWidth]="0"
+    >
+      <ul nz-menu [nzTheme]="'dark'" [nzMode]="'inline'" [nzInlineCollapsed]="isCollapsed">
+        <li nz-menu-item routerLink="/base/tableview">
+          <span><i nz-icon type="user"></i><span class="nav-text">Antd-Table</span></span>
+        </li>
+        <li nz-menu-item routerLink="/base/formview">
+          <span><i nz-icon nzType="form" nzTheme="outline"></i><span class="nav-text">Antd-Form</span></span>
+        </li>
+        <li nz-menu-item routerLink="/base/echartsview">
+          <span><i nz-icon type="video-camera"></i><span class="nav-text">Antd-Echarts</span></span>
+        </li>
+      </ul>
+    </nz-sider>
+    <!-- 右侧主体 -->
+    <nz-layout>
+      <!-- 路由占位符 -->
+      <router-outlet></router-outlet> 
+      <nz-footer style="text-align: center;">Angular-Antd-Demo-2022</nz-footer>
+    </nz-layout>
+  </nz-layout>
+  <nz-footer>Footer</nz-footer>
+</nz-layout>
+

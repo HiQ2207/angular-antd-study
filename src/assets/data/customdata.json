@@ -1,0 +1,25 @@
+{
+    "code": 200,
+    "message": "成功!",
+    "result": [
+        {
+            "name": "张三",
+            "age": 18,
+            "email": "55555@55.com",
+            "address": "xx城市"
+        },
+        {
+            "name": "李四",
+            "age": 19,
+            "email": "666666@66.com",
+            "address": "yy城市"
+        }
+        ,
+        {
+            "name": "王五",
+            "age": 20,
+            "email": "777777@77.com",
+            "address": "zz城市"
+        }
+    ]
+}

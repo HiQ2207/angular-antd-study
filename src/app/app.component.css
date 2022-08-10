@@ -1,0 +1,20 @@
+body {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.header {
+    position: relative;
+    margin: auto 0;
+    display: flex;
+    color: #ffffff;
+}
+
+.header img {
+    position: relative;
+    top: 12px;
+    margin-right: 20px;
+    width: 50px;
+    height: 40px;
+}
+

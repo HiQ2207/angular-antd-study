@@ -1,0 +1,22 @@
+.ant-layout-content {
+    min-height: 850px;
+}
+
+.ant-layout-content {
+    position: relative;
+    margin: 0 20px;
+}
+
+.leftChart {
+    position: absolute;
+    left: 10px;
+    width: 600px;
+    background-color: #F0F2F5;
+}
+
+.rightChart {
+    position: absolute;
+    right: 10px;
+    width: 600px;
+    background-color: #F0F2F5;
+}

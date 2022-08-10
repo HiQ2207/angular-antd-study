@@ -1,0 +1,15 @@
+nz-input-group {
+    width: 400px;
+    margin-bottom: 20px;
+}
+
+.ant-input-group-addon {
+    padding: 0;
+    border: 0;
+}
+
+nz-input-group .ant-btn {
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+}

@@ -1,0 +1,21 @@
+<app-antd-breadcrumb></app-antd-breadcrumb>
+<nz-content style="margin:24px 16px 0;">
+  <div class="content" style="padding:24px; background: #fff; min-height: 1800px;">
+    <!-- echarts -->
+    <div class="leftChart">
+      <div id="Chart" style="width: 600px; height: 400px;"></div>
+
+      <div id="Chart1" style="width: 600px; height: 400px;"></div>
+
+      <div id="Chart2" style="width: 600px; height: 400px;"></div>
+
+      <div id="Chart3" style="width: 600px; height: 400px;"></div>
+    </div>
+    <div class="rightChart">
+      <div id='chart' [appEchartsDirTest]="option1" style="width: 600px; height: 400px;"></div>
+      <div id='chart1' [appEchartsDirTest]="option2" style="width: 600px; height: 400px;"></div>
+      <div id='chart2' [appEchartsDirTest]="option3" style="width: 600px; height: 400px;"></div>
+      <div id='chart3' [appEchartsDirTest]="option4" style="width: 600px; height: 400px;"></div>
+    </div>
+  </div>
+</nz-content>

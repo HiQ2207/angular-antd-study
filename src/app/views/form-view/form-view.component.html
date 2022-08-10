@@ -1,0 +1,42 @@
+<app-antd-breadcrumb></app-antd-breadcrumb>
+<nz-content style="margin:24px 16px 0;">
+  <div style="padding:24px; background: #fff; min-height: 360px;">
+    <!-- input -->
+    <app-antd-input #input (inputVal)="getInputVal($event)"></app-antd-input>
+    <!-- tab -->
+    <nz-tabset [nzTabPosition]="'top'" [nzType]="'card'">
+      <nz-tab nzTitle="title0">
+        <!-- 使用组件 -->
+        <app-antd-form></app-antd-form>
+      </nz-tab>
+      <nz-tab nzTitle="title1">
+        <!-- 使用组件 -->
+        <app-antd-timepicker></app-antd-timepicker>
+      </nz-tab>
+      <nz-tab nzTitle="title2">
+        <ng-template nz-tab>
+          <app-antd-upload></app-antd-upload>
+        </ng-template>
+      </nz-tab>
+      <nz-tab nzTitle="title3">
+        <ng-template nz-tab>
+          <h3>没啦！没啦！不要找啦！</h3>
+        </ng-template>
+      </nz-tab>
+    </nz-tabset>
+  </div>
+</nz-content>
+
+<!-- tab页面标题 -->
+<ng-template #title0>
+  <span id="tab-0">选项一</span>
+</ng-template>
+<ng-template #title1>
+  <span id="tab-1">选项二</span>
+</ng-template>
+<ng-template #title2>
+  <span id="tab-2">选项三</span>
+</ng-template>
+<ng-template #title3>
+  <span id="tab-3">选项四</span>
+</ng-template>

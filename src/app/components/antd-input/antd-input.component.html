@@ -1,0 +1,18 @@
+<nz-input-group [nzAddOnAfter]="suffixIconButton" [nzSuffix]="suffixTemplate">
+  <input type="text" [(ngModel)]="searchVal" nz-input placeholder="请输入内容" />
+</nz-input-group>
+<ng-template #suffixIconButton>
+  <button nz-button nzType="primary" nzSearch (click)="sendSearch()"><i nz-icon type="search"></i></button>
+</ng-template>
+<ng-template #suffixTemplate>
+  <i
+    nz-icon
+    nz-tooltip
+    class="ant-input-clear-icon"
+    nzTheme="fill"
+    nzType="close-circle"
+    *ngIf="searchVal"
+    (click)="clear()"
+  >
+  </i>
+</ng-template>

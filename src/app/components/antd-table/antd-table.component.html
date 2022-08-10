@@ -1,0 +1,24 @@
+<nz-table #basicTable [nzData]="myTable">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+      <th>email</th>
+      <th>Address</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let data of basicTable.data">
+      <td>{{ data.name }}</td>
+      <td>{{ data.age }}</td>
+      <td>{{ data.email }}</td>
+      <td>{{ data.address }}</td>
+      <td>
+        <nz-tag [nzColor]="'green'" (click)="edit()">编辑</nz-tag>
+        <nz-divider nzType="vertical"></nz-divider>
+        <nz-tag [nzColor]="'red'" (click)="delete()">删除</nz-tag>
+      </td>
+    </tr>
+  </tbody>
+</nz-table>

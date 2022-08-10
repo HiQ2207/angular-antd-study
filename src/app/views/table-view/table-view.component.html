@@ -1,0 +1,12 @@
+<app-antd-breadcrumb></app-antd-breadcrumb>
+<nz-content style="margin:24px 16px 0;">
+  <div style="padding:24px; background: #fff; min-height: 360px;">
+    <!-- input -->
+    <app-antd-input #input (inputVal)="getInputVal($event)" [tableView]="this"></app-antd-input>
+    <div>
+      input子组件传递的值：{{ inputChildVal }}
+    </div>
+    <!-- table -->
+    <app-antd-table [data]="tableData"></app-antd-table>
+  </div>
+</nz-content>
