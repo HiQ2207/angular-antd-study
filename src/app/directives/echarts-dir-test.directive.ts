@@ -13,9 +13,8 @@ export class EchartsDirTestDirective {
   ngOnInit(): void {
     console.log(this.element.nativeElement);
     // 初始化画布
-    echarts.init(this.element.nativeElement).setOption(this.Option)
+    echarts.init(this.element.nativeElement).setOption(this.Option);
 
-    console.log('this.Option', this.Option)
+    console.log('this.Option', this.Option);
   }
-
 }

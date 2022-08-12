@@ -31,8 +31,8 @@ import { AntdUploadComponent } from './components/antd-upload/antd-upload.compon
 registerLocaleData(zh);
 
 // 引入服务
-import { HttpserviceService } from './services/httpservice.service';
-import { FuzzyqueryService } from './services/fuzzyquery.service';
+// import { HttpserviceService } from './services/httpservice.service';
+// import { FuzzyqueryService } from './services/fuzzyquery.service';
 
 @NgModule({
   declarations: [
@@ -62,8 +62,8 @@ import { FuzzyqueryService } from './services/fuzzyquery.service';
   ],
   providers: [
     { provide: NZ_I18N, useValue: zh_CN },
-    HttpserviceService,
-    FuzzyqueryService
+    // HttpserviceService,
+    // FuzzyqueryService
   ],
   bootstrap: [AppComponent]
 })

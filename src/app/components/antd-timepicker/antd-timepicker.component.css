@@ -1,0 +1,10 @@
+nz-date-picker,
+nz-month-picker,
+nz-range-picker,
+nz-week-picker {
+    margin: 0 8px 12px 0;
+}
+
+#timepicker .ant-calendar-footer {
+    padding: 0 12px 0 98px;
+}
