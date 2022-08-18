@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { format, subHours, subDays, startOfDay, startOfHour } from 'date-fns';
+import { subHours, subDays, startOfDay } from 'date-fns';
 
 @Component({
     selector: 'app-antd-timepicker',
@@ -12,7 +12,8 @@ export class AntdTimepickerComponent implements OnInit {
     public ranges: any = {
         '今天': [new Date(), new Date()],
         '一小时': [subHours(new Date(), 1), new Date()],
-        '七天': [subDays(startOfDay(new Date()), 7), new Date()]
+        '七天': [subDays(startOfDay(new Date()), 7), new Date()],
+        '一个月': [subDays(startOfDay(new Date()), 30), new Date()]
     };
     public startTime: any;
     public endTime: any;

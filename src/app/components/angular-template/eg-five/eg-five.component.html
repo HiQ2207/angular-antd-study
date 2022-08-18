@@ -1,0 +1,10 @@
+<h3>使用 ViewContainerRef,TemplateRef,ViewChild</h3>
+<!-- 
+    template：模板引用变量；
+    let 关键字会声明一个模板输入变量，你可以在模板中引用该变量
+        name：模板输入变量；name：输入变量值；
+        foo：默认模板输入变量 
+ -->
+<ng-template #template1 let-value="name" let-default>
+    <p>引用该变量1：{{ default }} - {{ value }} </p>
+</ng-template>

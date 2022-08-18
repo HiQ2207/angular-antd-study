@@ -1,0 +1,7 @@
+<!-- 通过ngIf结构型指令显示ng-template的内容 -->
+<div class="lessons-list" *ngIf="flag else elseTemplate">
+    判断条件为真
+</div>
+<ng-template #elseTemplate>
+    <div>判断条件为假</div>
+</ng-template>

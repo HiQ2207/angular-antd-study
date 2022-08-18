@@ -6,6 +6,7 @@ import { BasePageComponent } from './views/base-page/base-page.component';
 import { TableViewComponent } from './views/table-view/table-view.component';
 import { EchartsViewComponent } from './views/echarts-view/echarts-view.component';
 import { FormViewComponent } from './views/form-view/form-view.component';
+import { TemplateViewComponent } from './views/template-view/template-view.component';
 
 const routes: Routes = [
   {
@@ -27,6 +28,15 @@ const routes: Routes = [
       {
         path: 'formview',
         component: FormViewComponent
+      },
+      {
+        path: 'formview',
+        component: FormViewComponent
+      }
+      ,
+      {
+        path: 'templateview',
+        component: TemplateViewComponent
       }
     ]
   }

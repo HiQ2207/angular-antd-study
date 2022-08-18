@@ -28,6 +28,13 @@ import { BasePageComponent } from './views/base-page/base-page.component';
 import { AntdFormComponent } from './components/antd-form/antd-form.component';
 import { AntdTimepickerComponent } from './components/antd-timepicker/antd-timepicker.component';
 import { AntdUploadComponent } from './components/antd-upload/antd-upload.component';
+import { TemplateViewComponent } from './views/template-view/template-view.component';
+import { EgOneComponent } from './components/angular-template/eg-one/eg-one.component';
+import { EgTwoComponent } from './components/angular-template/eg-two/eg-two.component';
+import { UnlessDirective } from './directives/unless.directive';
+import { EgThreeComponent } from './components/angular-template/eg-three/eg-three.component';
+import { EgFourComponent } from './components/angular-template/eg-four/eg-four.component';
+import { EgFiveComponent } from './components/angular-template/eg-five/eg-five.component';
 registerLocaleData(zh);
 
 // 引入服务
@@ -48,6 +55,13 @@ registerLocaleData(zh);
     AntdFormComponent,
     AntdTimepickerComponent,
     AntdUploadComponent,
+    TemplateViewComponent,
+    EgOneComponent,
+    EgTwoComponent,
+    UnlessDirective,
+    EgThreeComponent,
+    EgFourComponent,
+    EgFiveComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,17 @@
+<h3>使用 ngTemplateOutlet 结构型指令</h3>
+<!-- ngTemplateOutlet是一个结构型指令，能够将一个提前备好的 TemplateRef插入到页面指定位置。 -->
+<!-- myTpl：模板引用变量；context：输入对象数据 -->
+<div>
+    <ng-container *ngTemplateOutlet="template2; context: context"></ng-container>
+</div>
+ 
+<!-- 
+  myTpl：模板引用变量；
+  let 关键字会声明一个模板输入变量，你可以在模板中引用该变量
+    value：模板输入变量；name：输入变量值；
+    default：默认输入变量 
+    使用ngTemplateOutletContext能够传递组件内部变量，简写直接使用context
+-->
+<ng-template #template2 let-value="name" let-default>
+    <p>引用该变量2：{{ default }} - {{ value }} </p>
+</ng-template>
