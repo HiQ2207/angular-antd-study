@@ -35,6 +35,7 @@ import { UnlessDirective } from './directives/unless.directive';
 import { EgThreeComponent } from './components/angular-template/eg-three/eg-three.component';
 import { EgFourComponent } from './components/angular-template/eg-four/eg-four.component';
 import { EgFiveComponent } from './components/angular-template/eg-five/eg-five.component';
+import { RollingloadViewComponent } from './views/rollingload-view/rollingload-view.component';
 registerLocaleData(zh);
 
 // 引入服务
@@ -61,7 +62,8 @@ registerLocaleData(zh);
     UnlessDirective,
     EgThreeComponent,
     EgFourComponent,
-    EgFiveComponent
+    EgFiveComponent,
+    RollingloadViewComponent
   ],
   imports: [
     BrowserModule,
