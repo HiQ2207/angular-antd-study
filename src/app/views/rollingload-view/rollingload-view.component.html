@@ -1,49 +1,49 @@
 <nz-table
-        #virtualTable
-        nzVirtualScroll
-        [nzVirtualItemSize]="54"
-        [nzData]="listOfData"
-        [nzFrontPagination]="false"
-        [nzShowPagination]="false"
-        [nzScroll]="{ x: '1200px', y: '600px' }"
-    >
-      <thead>
+    #virtualTable
+    nzVirtualScroll
+    [nzVirtualItemSize]="54"
+    [nzData]="listOfData"
+    [nzFrontPagination]="false"
+    [nzShowPagination]="false"
+    [nzScroll]="{ x: '1200px', y: '600px' }"
+>
+  <thead>
+    <tr>
+        <th nzShowExpand nzWidth="100px" nzLeft="0px"></th>
+        <th nzWidth="100px" nzLeft="100px">Full Name</th>
+        <th nzWidth="100px" nzLeft="200px">Age</th>
+        <th nzWidth="100px">Email</th>
+        <th nzWidth="100px">Address</th>
+        <th nzWidth="100px">Column 1</th>
+        <th nzWidth="100px">Column 2</th>
+        <th nzWidth="100px">Column 3</th>
+        <th nzWidth="100px">Column 4</th>
+        <th nzWidth="100px">Column 5</th>
+        <th nzWidth="100px">Column 6</th>
+        <th nzWidth="100px" nzRight="0px">Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <ng-template nz-virtual-scroll let-data let-index="index">
         <tr>
-            <th nzShowExpand nzWidth="100px" nzLeft="0px"></th>
-            <th nzWidth="100px" nzLeft="100px">Full Name</th>
-            <th nzWidth="100px" nzLeft="200px">Age</th>
-            <th nzWidth="100px">Email</th>
-            <th nzWidth="100px">Address</th>
-            <th nzWidth="100px">Column 1</th>
-            <th nzWidth="100px">Column 2</th>
-            <th nzWidth="100px">Column 3</th>
-            <th nzWidth="100px">Column 4</th>
-            <th nzWidth="100px">Column 5</th>
-            <th nzWidth="100px">Column 6</th>
-            <th nzWidth="100px" nzRight="0px">Action</th>
+            <td nzLeft="0px"nzShowExpand [(nzExpand)]="mapOfExpandData[data.id]"></td>
+            <td nzLeft="100px">{{ data.name }}</td>
+            <td nzLeft="200px">{{ data.age }}</td>
+            <td>{{ data.email }}</td>
+            <td>{{ data.address }}</td>
+            <td>{{ data.address }}</td>
+            <td>{{ data.address }}</td>
+            <td>{{ data.address }}</td>
+            <td>{{ data.address }}</td>
+            <td>{{ data.address }}</td>
+            <td>{{ data.address }}</td>
+            <td nzRight="0px">
+            <a>action</a>
+          </td>
         </tr>
-      </thead>
-      <tbody>
-        <ng-template nz-virtual-scroll let-data let-index="index">
-            <tr>
-                <td nzLeft="0px"nzShowExpand [(nzExpand)]="mapOfExpandData[data.id]"></td>
-                <td nzLeft="100px">{{ data.name }}</td>
-                <td nzLeft="200px">{{ data.age }}</td>
-                <td>{{ data.email }}</td>
-                <td>{{ data.address }}</td>
-                <td>{{ data.address }}</td>
-                <td>{{ data.address }}</td>
-                <td>{{ data.address }}</td>
-                <td>{{ data.address }}</td>
-                <td>{{ data.address }}</td>
-                <td>{{ data.address }}</td>
-                <td nzRight="0px">
-                <a>action</a>
-              </td>
-            </tr>
-            <tr [nzExpand]="mapOfExpandData[data.id]">
-                <td colspan="24">{{ data.description }}</td>
-            </tr>
-        </ng-template>
-      </tbody>
-    </nz-table>
+        <tr [nzExpand]="mapOfExpandData[data.id]">
+            <td colspan="24">{{ data.description }}</td>
+        </tr>
+    </ng-template>
+  </tbody>
+</nz-table>

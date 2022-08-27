@@ -8,7 +8,8 @@ import { EchartsViewComponent } from './views/echarts-view/echarts-view.componen
 import { FormViewComponent } from './views/form-view/form-view.component';
 import { TemplateViewComponent } from './views/template-view/template-view.component';
 import { RollingloadViewComponent } from './views/rollingload-view/rollingload-view.component';
-
+import { QiankunViewComponent } from './views/qiankun-view/qiankun-view.component';
+import { EmptyComponent } from './components/empty/empty.component';
 const routes: Routes = [
   {
     path: '',
@@ -41,12 +42,20 @@ const routes: Routes = [
       {
         path: 'rollingloadview',
         component: RollingloadViewComponent
+      },
+      {
+        path: 'qiankunview',
+        component: QiankunViewComponent,
+        children: [
+          {
+            path: '**',
+            component: EmptyComponent
+          }
+        ]
       }
     ]
   }
-  
 ];
-
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]

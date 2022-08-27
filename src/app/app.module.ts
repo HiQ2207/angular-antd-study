@@ -36,6 +36,8 @@ import { EgThreeComponent } from './components/angular-template/eg-three/eg-thre
 import { EgFourComponent } from './components/angular-template/eg-four/eg-four.component';
 import { EgFiveComponent } from './components/angular-template/eg-five/eg-five.component';
 import { RollingloadViewComponent } from './views/rollingload-view/rollingload-view.component';
+import { QiankunViewComponent } from './views/qiankun-view/qiankun-view.component';
+import { EmptyComponent } from './components/empty/empty.component';
 registerLocaleData(zh);
 
 // 引入服务
@@ -63,7 +65,9 @@ registerLocaleData(zh);
     EgThreeComponent,
     EgFourComponent,
     EgFiveComponent,
-    RollingloadViewComponent
+    RollingloadViewComponent,
+    QiankunViewComponent,
+    EmptyComponent
   ],
   imports: [
     BrowserModule,
