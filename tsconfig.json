@@ -18,5 +18,8 @@
       "dom"
     ],
     "skipLibCheck": true // 解决Cannot find name 'Omit'
-  }
+  },  
+  "angularCompilerOptions": {
+    "entryModule": "./app/app.module#AppModule"
+  },
 }

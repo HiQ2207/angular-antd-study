@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { APP_BASE_HREF } from '@angular/common';
 
 // 引入组件
 import { BasePageComponent } from './views/base-page/base-page.component';
@@ -13,10 +14,11 @@ import { EmptyComponent } from './components/empty/empty.component';
 const routes: Routes = [
   {
     path: '',
-    component: BasePageComponent
+    redirectTo: '',
+    pathMatch: `full`
   },
   {
-    path: 'base',
+    path: '',
     component: BasePageComponent,
     children: [
       {
@@ -58,6 +60,9 @@ const routes: Routes = [
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
+  // @ts-ignore
+  // tslint:disable-next-line: max-line-length
+  providers: [{ provide: APP_BASE_HREF, useValue: window.__POWERED_BY_QIANKUN__ ? '/AngularDemoAntd' : '/' }]
 })
 export class AppRoutingModule { }
