@@ -38,6 +38,10 @@ import { EgFiveComponent } from './components/angular-template/eg-five/eg-five.c
 import { RollingloadViewComponent } from './views/rollingload-view/rollingload-view.component';
 import { QiankunViewComponent } from './views/qiankun-view/qiankun-view.component';
 import { EmptyComponent } from './components/empty/empty.component';
+import { EchartsCustomViewComponent } from './views/echarts-custom-view/echarts-custom-view.component';
+import { EchartHillComponent } from './graphs/echart-hill/echart-hill.component';
+import { EchartForceComponent } from './graphs/echart-force/echart-force.component';
+import { EchartAttackJudgeTrendComponent } from './graphs/echart-attack-judge-trend/echart-attack-judge-trend.component';
 registerLocaleData(zh);
 
 // 引入服务
@@ -67,7 +71,11 @@ registerLocaleData(zh);
     EgFiveComponent,
     RollingloadViewComponent,
     QiankunViewComponent,
-    EmptyComponent
+    EmptyComponent,
+    EchartsCustomViewComponent,
+    EchartHillComponent,
+    EchartForceComponent,
+    EchartAttackJudgeTrendComponent
   ],
   imports: [
     BrowserModule,

@@ -11,6 +11,7 @@ import { TemplateViewComponent } from './views/template-view/template-view.compo
 import { RollingloadViewComponent } from './views/rollingload-view/rollingload-view.component';
 import { QiankunViewComponent } from './views/qiankun-view/qiankun-view.component';
 import { EmptyComponent } from './components/empty/empty.component';
+import { EchartsCustomViewComponent } from './views/echarts-custom-view/echarts-custom-view.component';
 const routes: Routes = [
   {
     path: '',
@@ -18,7 +19,7 @@ const routes: Routes = [
     pathMatch: `full`
   },
   {
-    path: '',
+    path: 'base',
     component: BasePageComponent,
     children: [
       {
@@ -28,6 +29,10 @@ const routes: Routes = [
       {
         path: 'echartsview',
         component: EchartsViewComponent
+      },
+      {
+        path: 'echartscustomview',
+        component: EchartsCustomViewComponent
       },
       {
         path: 'formview',
