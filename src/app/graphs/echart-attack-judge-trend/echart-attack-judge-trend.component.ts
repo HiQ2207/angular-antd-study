@@ -30,7 +30,7 @@ const defalutOption = {
     formatter: null, // 自定义悬浮框信息
   },
   legend: {
-    data: ['攻击事件数', '已处理事件数'],
+    data: ['对象1', '对象2'],
     icon: 'rect',
     inactiveColor: "#656565",
     itemHeight: 8,
@@ -120,7 +120,7 @@ const defalutOption = {
         },
       },
       data: [],
-      name: "攻击事件数",
+      name: "对象1",
       smooth: 0.3,
       symbol: "none",
       type: "line",
@@ -164,7 +164,7 @@ const defalutOption = {
         },
       },
       data: [],
-      name: "已处理事件数",
+      name: "对象2",
       smooth: 0.3,
       symbol: "none",
       type: "line",

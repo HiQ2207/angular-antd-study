@@ -31,7 +31,7 @@ function transform(value: string, limit?: number) {
 // 定义默认图表配置
 const defaultOption = {
   title: {
-    text: '事件数(单位: 个)',
+    text: '因素(单位: 数量)',
     top: '100',
     left: 'right',
     textStyle: {

@@ -153,7 +153,7 @@ export class EchartHillComponent implements OnInit {
       ]
     },
     yAxis: {
-      label: "资产数",
+      label: "y轴数值",
       value: [
         [1, 2, 3, 8, 7, 5, 4]
       ]
@@ -169,7 +169,7 @@ export class EchartHillComponent implements OnInit {
   seriesData: any = {
     series: [30, 7, 7]
   };
-  axisData = ['异常资产数', '失陷资产数', '弱点资产数'];
+  axisData = ['x轴11', 'x轴22', 'x轴33'];
   options: any = defalutOption;
 
   constructor() { }
